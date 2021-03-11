@@ -75,6 +75,29 @@ img{
   display: block;
 }
 
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --title-color: #F2F2F2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: max-content;
+  margin-bottom: var(--mb-2);
+}
+
+.change-theme:hover{
+  color: var(--title-color);
+}
+
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -117,7 +140,8 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.15);
+  box-shadow: 0 1px 8px rgba(146,161,176,.15);
+  border-radius: 2px 2px 80px 80px;
 }
 
 /*===== NAV =====*/
@@ -304,7 +328,7 @@ img{
   border-radius: .5rem;
 }
 
-/* ===== WORK =====*/
+/* ===== PROJECT =====*/
 .work__container{
   row-gap: 2rem;
 }
@@ -319,6 +343,50 @@ img{
 }
 .work__img img:hover{
   transform: scale(1.1);
+}
+
+/*========== RESUME ==========*/
+.resume__content{
+  display: flex;
+}
+
+.resume__time{
+  padding-right: 1rem; 
+}
+
+.resume__rounder{
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #707070;
+  border-radius: 50%;
+  margin-top: 1.2rem;
+}
+
+.resume__line{
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #707070;
+  transform: translate(7px, 0);
+}
+
+.resume__data{
+  gap: .5rem;
+}
+
+.resume__title{
+  font-size: 1rem;
+}
+
+.resume__studies{
+  font-size: .875rem;
+  color: #403A3A;
+}
+
+.resume__year{
+  font-size: .813rem;
 }
 
 /* ===== CONTACT =====*/
